@@ -21,7 +21,7 @@ const refs = {
   
 const switchColors = (event) => {
   refs.startBtn.removeEventListener('click', switchColors); //удаление слушателя со старт
-  const id = setInterval(cbSwitchColorsInterval, 2000);  
+  const id = setInterval(cbSwitchColorsInterval, 1000);  
   console.log(id);
   const stopSwitchingColors = () => {
     clearInterval(id);//удаление таймера
